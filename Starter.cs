@@ -10,8 +10,11 @@ namespace SumEvent
     {
         public void Run()
         {
+            Console.WriteLine("\tTask 1:");
             var task1 = new Task1Events();
+            task1.Run(10, 2);
 
+            Console.WriteLine("\n\tTask 2:");
             var task2 = new Task2Linq();
             task2.Run();
         }
